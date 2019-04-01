@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Orders"
+    android:background="@drawable/bg">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar_Orders"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Your Order"
+        app:titleTextColor="@android:color/white"/>
+    <ListView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/my_toolbar_Orders"
+        android:divider="#2d63e1"
+        android:background="#fcf6a7"
+        android:dividerHeight="3dp"
+        android:id="@+id/List_View_Orders"/>
+
+</RelativeLayout>

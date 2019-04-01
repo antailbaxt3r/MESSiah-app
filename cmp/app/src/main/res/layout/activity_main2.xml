@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity"
+    android:background="#F4F2D9"
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Item Quantity page"
+        app:titleTextColor="@android:color/white"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/my_toolbar"
+        android:layout_marginTop="50dp"
+        android:hint="Enter Quantity"
+        android:gravity="center"
+        android:id="@+id/qty"
+        android:digits="0123456789"
+        android:inputType="number"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/qty"
+        android:text="text view"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/FoodItem"
+        android:autoSizeTextType="uniform"
+        />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/butt"
+        android:text="done"
+        android:autoSizeTextType="uniform"
+       android:id="@+id/doneButtonId"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+        android:elevation="100dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:autoSizeMaxTextSize="20dp"
+        android:textColor="@android:color/white"
+        />
+
+
+
+
+
+
+</RelativeLayout>

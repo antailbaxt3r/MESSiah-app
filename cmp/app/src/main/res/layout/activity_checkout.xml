@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".checkout"
+    android:background="#F4F2D9"
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="BOOK YOUR FOOD"
+        app:titleTextColor="@android:color/white"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/my_toolbar"
+        android:divider="@android:color/holo_blue_dark"
+        android:dividerHeight="1dp"
+        android:id="@+id/finalOrderListId"
+        android:layout_above="@id/EntName"
+        android:layout_marginBottom="10dp">
+
+    </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/butts"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/butt"
+            android:autoSizeTextType="uniform"
+            android:text="AMOUNT"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:id="@+id/finalTotalPriceId"
+            android:layout_marginRight="5dp"
+            android:autoSizeMaxTextSize="25dp"
+
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="PROCEED TO CHECKOUT"
+            android:background="@drawable/butt"
+            android:textStyle="bold"
+            android:id="@+id/CheckoutButton"
+            android:layout_weight="0.5"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="25dp"
+            android:textColor="@android:color/white"
+            />
+
+
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Pack"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/toBePacked"
+        android:layout_above="@id/butts"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/toBePacked"
+        android:hint="Enter Name"
+        android:gravity="center"
+        android:id="@+id/EntName"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"/>
+
+
+
+</RelativeLayout>

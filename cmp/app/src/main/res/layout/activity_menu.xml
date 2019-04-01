@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".menu">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="20dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@android:color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="MENU"
+                android:textColor="@android:color/white"
+                android:gravity="center_vertical"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="20dp"
+                android:layout_alignParentLeft="true"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/app_logo"/>
+
+            <Button
+                android:id="@+id/ViewCurrentOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="0dp"
+                android:autoSizeMaxTextSize="15dp"
+                android:autoSizeTextType="uniform"
+                android:background="@android:color/transparent"
+
+                android:gravity="center"
+                android:text="View current orders"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_below="@id/my_toolbar"
+        android:id="@+id/ll"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        >
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/SearchBar"
+            android:hint="Search Your Food Here"
+            android:fontFamily="@font/bearskin"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColorHint="#b6daec"
+            android:textColor="#ffffff"
+            android:elevation="100dp"
+            android:layout_weight="0.7"
+            android:layout_marginRight="2dp"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/clearId"
+            android:fontFamily="@font/bearskin"
+            android:layout_above="@id/lvbelow"
+            android:text="CLEAR ORDER"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_weight="0.3"
+            android:autoSizeMaxTextSize="20dp"/>
+
+    </LinearLayout>
+
+
+
+
+    <ListView
+        android:id="@+id/listViewId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll"
+        android:layout_marginTop="5dp"
+        android:layout_above="@id/lvbelow"
+        android:layout_marginBottom="0dp"
+        android:background="#fcf6a7"
+        android:divider="#FF2D63E1"
+        android:dividerHeight="3sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:id="@+id/lvbelow">
+        <TextView
+            android:fontFamily="@font/bearskin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#FF2D63E1"
+            android:id="@+id/TotalPrice"
+            android:elevation="100dp"
+            android:text="Rs. 0"
+            android:textColor="@android:color/white"
+            android:autoSizeMaxTextSize="20dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:layout_weight="0.7"
+            android:autoSizeTextType="uniform"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:elevation="100dp"
+            android:background="#FF2D63E1"
+            android:text="Proceed"
+            android:fontFamily="@font/bearskin"
+            android:gravity="center"
+            android:autoSizeTextType="uniform"
+            android:id="@+id/proceed"
+            android:paddingLeft="5dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:autoSizeMaxTextSize="20dp"
+            />
+    </LinearLayout>
+
+
+
+
+    <ProgressBar
+        android:id="@+id/pBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+    </ProgressBar>
+
+
+
+
+
+</RelativeLayout>

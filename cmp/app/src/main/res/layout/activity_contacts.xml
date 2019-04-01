@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".contacts"
+    android:background="@drawable/bg"
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="20dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@android:color/white"
+        app:title="CONTACT US"/>
+
+<LinearLayout
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingRight="10dp"
+android:paddingLeft="10dp"
+android:paddingTop="15dp"
+android:paddingBottom="15dp"
+android:orientation="vertical"
+android:weightSum="100"
+android:layout_below="@id/my_toolbar">
+
+    <android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="15dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONTACT THE DEVELOPERS"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:fontFamily="@font/bearskin"/>
+</android.support.v7.widget.CardView>
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="25"
+    app:cardCornerRadius="15dp"
+    android:id="@+id/callAjinkya"
+    android:layout_marginBottom="10dp"
+    app:cardBackgroundColor="#6699cc"
+    app:contentPadding="5dp">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Ajinkya Deshpande
+98197622S0
+ajdesh2000@gmail.com"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:fontFamily="@font/bearskin"/>
+
+    </android.support.v7.widget.CardView>
+</android.support.v7.widget.CardView>
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="25"
+    android:id="@+id/callRaghav"
+    app:cardCornerRadius="15dp"
+    android:layout_marginBottom="10dp"
+    app:cardBackgroundColor="#6699cc"
+    app:contentPadding="5dp">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="15dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Raghav Kumar Gupta
+6387331998
+raghavkumargupta18@gmail.com"
+                android:textColor="#000"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:fontFamily="@font/bearskin"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</android.support.v7.widget.CardView>
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="25"
+    app:cardCornerRadius="15dp"
+    android:layout_marginBottom="10dp"
+    app:cardBackgroundColor="#6699cc"
+    app:contentPadding="5dp">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/callArjun"
+        app:cardCornerRadius="15dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Arjun Bajpai
+7S22833338
+arjunbajpaiwork@gmail.com"
+                android:textColor="#000"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:fontFamily="@font/bearskin"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="25"
+        app:cardCornerRadius="15dp"
+        android:id="@+id/callRishabh"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="#6699cc"
+        app:contentPadding="5dp">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Rishabh Bajpai
+96S7736069
+rishabh29b@gmail.com"
+                android:textColor="#000"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:fontFamily="@font/bearskin"/>
+
+        </android.support.v7.widget.CardView>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+    </RelativeLayout>
